@@ -19,6 +19,22 @@
                 WriteLog("Carregando planilhas XLSX");
                 foreach (string filename in Directory.GetFiles(Properties.Settings.Default.Directory, "*.xlsx"))
                 {
+                    if (filename.IndexOf('~') > -1)
+                        continue;
+
+                    WriteLog("Carregando arquivo: " + filename);
+                    Workbook wb = xlApp.Workbooks.Open(filename);
+
+                    foreach (Worksheet ws in wb.Sheets)
+                    {
+                        //WriteLog(ws.Name);
+                    }
+
+                    wb.Close();
+                    currAction++;
+
+                    File.Move(filename, Properties.Settings.Default.MoveDirectory + "\\" + Path.GetFileName(filename));
+                    WriteLog("Arquivo movido " + filename);
                 }
             
                 xlApp.Quit();
