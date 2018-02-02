@@ -10,6 +10,8 @@ using Microsoft.Office.Interop.Excel;
 
 namespace EffectiveMailing
 {
+     static StreamWriter fs;
+     
     class Program
     {
     }
@@ -47,4 +49,10 @@ namespace EffectiveMailing
                 cmd.Parameters.Add(new OracleParameter(":5", OracleDbType.Varchar2)).Value = valor;
                 cmd.ExecuteNonQuery();
         }
+
+             static void WriteLog(string log)
+        {
+            fs.WriteLine(String.Format("[{0}] -> {1}", DateTime.Now.ToString("dd/MM/yyyy hh:mm"), log));
+        }
+
 }
