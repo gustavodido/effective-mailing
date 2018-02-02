@@ -27,7 +27,18 @@
 
                     foreach (Worksheet ws in wb.Sheets)
                     {
-                        //WriteLog(ws.Name);
+                        foreach (Range r in ws.get_Range("A2:A20000"))
+                            try
+                            {
+                                if (!string.IsNullOrEmpty(Convert.ToString(r.Value)))
+                                }
+                                else
+                                    break;
+                            }
+                            catch(Exception ex)
+                            {
+                                WriteLog(ex.Message + " - " + r.Value);
+                            }
                     }
 
                     wb.Close();
