@@ -1,7 +1,0 @@
-C:\Users\Mustang\Documents\Visual Studio 2010\Projects\EffectiveMailing\EffectiveMailing\EffectiveMailing\obj\x86\Debug\ResolveAssemblyReference.cache
-C:\Users\Mustang\Documents\Visual Studio 2010\Projects\EffectiveMailing\EffectiveMailing\EffectiveMailing\obj\x86\Debug\EffectiveMailing.csproj.ResolveComReference.cache
-C:\Users\Mustang\Documents\Visual Studio 2010\Projects\EffectiveMailing\EffectiveMailing\EffectiveMailing\bin\Debug\EffectiveMailing.exe
-C:\Users\Mustang\Documents\Visual Studio 2010\Projects\EffectiveMailing\EffectiveMailing\EffectiveMailing\bin\Debug\EffectiveMailing.pdb
-C:\Users\Mustang\Documents\Visual Studio 2010\Projects\EffectiveMailing\EffectiveMailing\EffectiveMailing\obj\x86\Debug\EffectiveMailing.exe
-C:\Users\Mustang\Documents\Visual Studio 2010\Projects\EffectiveMailing\EffectiveMailing\EffectiveMailing\obj\x86\Debug\EffectiveMailing.pdb
-C:\Users\Mustang\Documents\Visual Studio 2010\Projects\EffectiveMailing\EffectiveMailing\EffectiveMailing\bin\Debug\EffectiveMailing.exe.config
