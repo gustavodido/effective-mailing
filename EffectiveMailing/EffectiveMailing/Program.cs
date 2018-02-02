@@ -31,6 +31,13 @@
                             try
                             {
                                 if (!string.IsNullOrEmpty(Convert.ToString(r.Value)))
+                                {
+                                    if (ws.get_Range("B1").Value == "FLAG" && !string.IsNullOrEmpty(ws.get_Range("B" + r.Row).Value))
+                                        InserRecord(conn, Path.GetFileName(filename), currAction, "", ws.Name, r.Value);
+                                    else if (ws.get_Range("C1").Value == "FLAG" && !string.IsNullOrEmpty(ws.get_Range("C" + r.Row).Value))
+                                        InserRecord(conn, Path.GetFileName(filename),currAction, r.Value, ws.Name, ws.get_Range("B" + r.Row).Value);
+                                    else if (string.IsNullOrEmpty(ws.get_Range("B1").Value))
+                                        InserRecord(conn, Path.GetFileName(filename),currAction, "", ws.Name, Convert.ToString(r.Value));
                                 }
                                 else
                                     break;
